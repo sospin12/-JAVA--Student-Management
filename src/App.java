@@ -85,7 +85,7 @@ public class App {
                     System.out.println("Student grade: " + v.grade);
                     System.err.println("What is the new grade?: ");
                     newGrade = scan.nextDouble();
-                    v.grade=newGrade;
+                    v.grade = newGrade;
                 } else {
                     System.out.println("Student not found");
                 }
@@ -95,35 +95,37 @@ public class App {
     }
 
     public static void menu(ArrayList<Students> array, Scanner scan) {
-        System.out.println("\nChoose the option: ");
-        System.out.println(
-                " 1. Add student and grade.\n 2. Show the student list and grades.\n 3. Delete student.\n 4. Search student.\n 5. Update grade.");
-                System.out.println("  6. Organice the list by grade.");
-                System.out.println("  7. shearch students by grade.");
-                System.out.println("enter any other number to finish the program.");
-        int c = scan.nextInt();
+        int c;
+        do {
+            System.out.println("\nChoose the option: ");
+            System.out.println(
+                    " 1. Add student and grade.\n 2. Show the student list and grades.\n 3. Delete student.\n 4. Search student.\n 5. Update grade.");
+            System.out.println(" 6. Organice the list by grade.");
+            System.out.println(" 7. shearch students by grade.");
+            System.out.println("enter 8 to finish the program.");
+            c = scan.nextInt();
 
-        switch (c) {
-            case 1:
-                addStudent(array, scan);
-            case 2:
-                printArray(array, scan);
-            case 3:
-                deleteStudent(array, scan);
-            case 4:
-                searchStudent(array, scan);
-            case 5:
-                updateGrade(array, scan);
-            case 6:
-                bubbleSort.organiceBubbleSort(array);
-                menu(array, scan);
-            case 7:
-                if (binarySearch.performBinarySearch(array)) System.out.println("we found the chamaco.");
-                menu(array, scan);
-            default:
-                System.out.println("Not valid option...");
-                menu(array, scan);
-        }
+            switch (c) {
+                case 1:
+                    addStudent(array, scan);
+                case 2:
+                    printArray(array, scan);
+                case 3:
+                    deleteStudent(array, scan);
+                case 4:
+                    searchStudent(array, scan);
+                case 5:
+                    updateGrade(array, scan);
+                case 6:
+                    bubbleSort.organiceBubbleSort(array);
+                case 7:
+                    if (binarySearch.performBinarySearch(array))
+                        System.out.println("we found the chamaco.");
+                default:
+                    System.out.println("Not valid option...");
+            }
+
+        } while (c != 8);
 
     }
 }
