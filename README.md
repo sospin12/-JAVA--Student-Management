@@ -1,5 +1,6 @@
 # STUDENT MANAGEMENT
 
+Lemguage: JAVA
 This is a program that allows managing a list of students with their respective grades. The program should offer the following functionalities:
 
 1. Add a student: The program should prompt the user to enter the student’s name and grade.
