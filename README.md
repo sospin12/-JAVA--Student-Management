@@ -1,7 +1,7 @@
 # STUDENT MANAGEMENT
 
 Lemguage: JAVA
-This is a program that allows managing a list of students with their respective grades. The program should offer the following functionalities:
+This is a program that allows managing a list of students with their grades. The program offer the following functionalities:
 
 1. Add a student: The program should prompt the user to enter the student’s name and grade.
 2. Show all students: It should display a list of students with their names and grades.
@@ -18,7 +18,3 @@ This is a program that allows managing a list of students with their respective 
 5. Array class and its methods: size(), get(), set().
 6. Iterative control structures (While, For).
 7. Control structure: conditional. (If, Switch).
-
-
->[!NOTE]
->AQUI UNA NOTA
