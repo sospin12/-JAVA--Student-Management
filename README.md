@@ -20,5 +20,5 @@ This is a program that allows managing a list of students with their respective 
 7. Control structure: conditional. (If, Switch).
 
 
-[!NOTE]
-AQUI UNA NOTA
+>[!NOTE]
+>AQUI UNA NOTA
