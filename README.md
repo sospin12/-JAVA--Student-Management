@@ -18,3 +18,7 @@ This is a program that allows managing a list of students with their respective 
 5. Array class and its methods: size(), get(), set().
 6. Iterative control structures (While, For).
 7. Control structure: conditional. (If, Switch).
+
+
+.[!NOTE]
+AQUI UNA NOTA
